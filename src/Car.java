@@ -33,8 +33,8 @@ public class Car {
 
         // This is the only way Java will run our program
     public static void main(String[] args) {
-        String s = "Hello ";
-        s += "here is me!";
+        String s = "Hello here is ";
+        s += " the Car Object!";
 
 
         System.out.println(s);
