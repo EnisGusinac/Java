@@ -5,7 +5,7 @@ import java.util.List;
 /**
  *   Telescopic constructor pattern
  */
-public class Machine extends Company {
+public class Machine {
     private String name;
     private String engine;
     private Integer fuel;

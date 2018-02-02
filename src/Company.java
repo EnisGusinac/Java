@@ -9,7 +9,7 @@ import java.util.TimeZone;
  *   required parameter and each optional parameter
  *   of interest
  */
-public class Company extends CompanyBuilderPattern {
+public class Company {
 
     private int machines = 100;
     private int workers = 1000;
