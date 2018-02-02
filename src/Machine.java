@@ -1,11 +1,13 @@
-import java.util.ArrayList;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
 /**
- *   Telescopic constructor pattern
+ * Telescopic constructor pattern
  */
 public class Machine {
+
     private String name;
     private String engine;
     private Integer fuel;
@@ -25,10 +27,22 @@ public class Machine {
         this.workingHours = workingHours;
     }
 
-    //    empty constructor of noninstatible class
-    public Machine() {   }
+    // Date format
+    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+    Date date = new Date();
 
-    //    public static factory method
+    // Factory behaviour method
+    public void factoryWork() {
+        System.out.println("Factory runs at " + startTime + " o'clock every day. The working hours are " + workingHours + " every day + bonus hours occasionally");
+        System.out.println("Production date starts at " + dateFormat.format(date) + ", and we have engines type " + engine + " with " + fuel + "l every day, working with full capacity");
+    }
+
+
+    // Parameterless constructor of noninstatible class
+    public Machine() {
+    }
+
+    // public static factory method
     private static List<Machine> partsForMashines(Integer machines) {
         return partsForMashines(10);
     }

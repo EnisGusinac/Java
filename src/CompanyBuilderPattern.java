@@ -32,12 +32,25 @@ public class CompanyBuilderPattern extends Company {
      * @param args
      */
     public static void main(String[] args) {
+        // Instatiating a new object Company
         Company aba = new Company();
         aba.setExpences(1000);
         aba.setMachines(10);
         aba.setSalary(1000);
         aba.setWorkers(35);
         aba.workingHours();
+        System.out.println("____________________________________");
+
+        // Allocating a new object Machine
+        Machine newMachine = new Machine();
+        newMachine.workingHours = 8;
+        newMachine.startTime = 8;
+        newMachine.setEngine("Turbo");
+        newMachine.setName("Machine");
+        newMachine.setStartTime(9);
+        newMachine.setFuel(100);
+        newMachine.factoryWork();
+        System.out.println("____________________________________");
     }
 
 
