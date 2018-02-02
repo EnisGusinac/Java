@@ -15,12 +15,8 @@ public class Human {
     int weight;
     String eyeColor;
 
-    public Human() {
-    }
-
     public void speak() {
-        System.out.println("Humans are able to speak!");
-        System.out.println("Hello my name is " + name + ", nice to meet you!");
+        System.out.println("Hello my name is " + name + ", and my age is" + age);
         System.out.println("I am " + height + "cm in height, and " + weight + "kg in weight.");
         System.out.println("My eye color is " + eyeColor);
     }

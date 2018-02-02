@@ -4,9 +4,10 @@ public class Earth {
 
     public static void main(String[] args) {
 
-        // Assigning values to the Human "Tom"
+        // Assigning values to the Human named "Tom"
         Human tom = new Human();
         tom.name = "Tom";
+        tom.age = 30;
         tom.weight = 94;
         tom.eyeColor = "grey";
         tom.height = 187;
