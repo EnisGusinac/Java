@@ -33,8 +33,10 @@ public class Machine {
 
     // Factory behaviour method
     public void factoryWork() {
-        System.out.println("Factory runs at " + startTime + " o'clock every day. The working hours are " + workingHours + " every day + bonus hours occasionally");
-        System.out.println("Production date starts at " + dateFormat.format(date) + ", and we have engines type " + engine + " with " + fuel + "l every day, working with full capacity");
+        System.out.println("Factory runs at " + startTime + " o'clock every day. The working hours are " + workingHours +
+                " every day + bonus hours occasionally");
+        System.out.println("Production date starts at " + dateFormat.format(date) + ", and we have engines type " + engine +
+                " with " + parts + " and " + fuel + "l every day, working with full capacity");
     }
 
 

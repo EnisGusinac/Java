@@ -1,6 +1,6 @@
 
 /**
- *  The form of the Builder pattern
+ *  The form of the Builder design pattern
  *  third alternative that combines the safety of the telescoping constructor
  *  pattern with the readability of the JavaBeans pattern
  */
@@ -32,7 +32,7 @@ public class CompanyBuilderPattern extends Company {
      * @param args
      */
     public static void main(String[] args) {
-        // Instatiating a new object Company
+        // Allocating a new object Company
         Company aba = new Company();
         aba.setExpences(1000);
         aba.setMachines(10);
@@ -49,6 +49,7 @@ public class CompanyBuilderPattern extends Company {
         newMachine.setName("Machine");
         newMachine.setStartTime(9);
         newMachine.setFuel(100);
+        newMachine.setParts(10);
         newMachine.factoryWork();
         System.out.println("____________________________________");
     }
