@@ -13,7 +13,18 @@ public class Earth {
         tom.speak();
         tom.walk();
         tom.talk();
+        System.out.println("----------------------------------------");
+
+        // Telescoping constructor pattern
+        Animal birdy = new Animal("bird", 2, 2);
+        birdy.specification();
+        birdy.fly();
+        System.out.println("----------------------------------------");
+
+        Animal barky = new Animal("dog", 3, 22);
+        barky.bark();
+        barky.specification();
+        System.out.println("----------------------------------------");
+
     }
-
-
 }

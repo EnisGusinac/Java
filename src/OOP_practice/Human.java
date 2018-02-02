@@ -1,6 +1,5 @@
 package OOP_practice;
 
-
 /**
  * JavaBeans Pattern - allows inconsistency, mandates mutability
  * in which you call a parameterless constructor to create
@@ -31,7 +30,7 @@ public class Human {
     }
 
     public void talk() {
-        System.out.println("And I am talking!");
+        System.out.println("And I am able to talk!");
     }
 
 

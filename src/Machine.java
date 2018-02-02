@@ -33,38 +33,33 @@ public class Machine {
         return partsForMashines(10);
     }
 
-    List<Machine> machineList = new ArrayList<>();
-
-    public List<Machine> getMachineList() {
-        return machineList;
+    // Java Beans pattern - Setter methods
+    public void setName(String name) {
+        this.name = name;
     }
 
-    // Generated Getters
-    public String getName() {
-        return name;
+    public void setEngine(String engine) {
+        this.engine = engine;
     }
 
-    public String getEngine() {
-        return engine;
+    public void setFuel(Integer fuel) {
+        this.fuel = fuel;
     }
 
-    public Integer getFuel() {
-        return fuel;
+    public void setParts(Integer parts) {
+        this.parts = parts;
     }
 
-    public Integer getParts() {
-        return parts;
+    public void setStartTime(Integer startTime) {
+        this.startTime = startTime;
     }
 
-    public Integer getStartTime() {
-        return startTime;
+    public void setProductionDate(Date productionDate) {
+        this.productionDate = productionDate;
     }
 
-    public Date getProductionDate() {
-        return productionDate;
+    public void setWorkingHours(Integer workingHours) {
+        this.workingHours = workingHours;
     }
 
-    public Integer getWorkingHours() {
-        return workingHours;
-    }
 }

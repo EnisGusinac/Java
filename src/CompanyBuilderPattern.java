@@ -1,4 +1,3 @@
-import java.util.Date;
 
 /**
  *  The form of the Builder pattern
@@ -28,6 +27,10 @@ public class CompanyBuilderPattern extends Company {
             this.expences = expences;
         }
 
+    /**
+     *  Usinc static void main - because it is the only way for Java to run the program.
+     * @param args
+     */
     public static void main(String[] args) {
         Company aba = new Company();
         aba.setExpences(1000);
@@ -35,28 +38,7 @@ public class CompanyBuilderPattern extends Company {
         aba.setSalary(1000);
         aba.setWorkers(35);
         aba.workingHours();
-
     }
 
-    public class Machine {
-        private String name;
-        private String engine;
-        private Integer fuel;
-        private Integer parts;
 
-        public Integer startTime;
-        public Date productionDate;
-        public Integer workingHours;
-
-        // Constructor with all properties - Telescoping constructor pattern
-        public Machine(String engine, Integer fuel, Integer parts, Integer startTime, Date productionDate, Integer workingHours) {
-            this.engine = engine;
-            this.fuel = fuel;
-            this.parts = parts;
-            this.startTime = startTime;
-            this.productionDate = productionDate;
-            this.workingHours = workingHours;
-        }
-
-    }
 }
