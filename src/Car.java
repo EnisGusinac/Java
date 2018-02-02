@@ -7,38 +7,31 @@ public class Car {
 
         private int speed = 230;
         private String brand = "Mercedes";
-        private String engineBrand = "V12";
+        private String engine = "V12";
 
-    public Car(int speed, String brand, String engineBrand){
-            this.speed = speed;
-            this.brand = brand;
-            this.engineBrand = engineBrand;
-        }
+    public Car(int speed, String brand, String engine) {
+        this.speed = speed;
+        this.brand = brand;
+        this.engine = engine;
+    }
 
-        public int getSpeed () {
-            return speed;
-        }
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
 
-        public void setSpeed ( int speed){
-            this.speed = speed;
-        }
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 
-        public String getBrand () {
-            return brand;
-        }
+    public void setEngine(String engine) {
+        this.engine = engine;
+    }
 
-        public void setBrand (String brand){
-            this.brand = brand;
-        }
-
-        // This is the only way Java will run our program
+    // This is the only way Java will run our program
     public static void main(String[] args) {
         String s = "Hello here is ";
         s += " the Car Object!";
-
-
         System.out.println(s);
-
     }
 
 }
