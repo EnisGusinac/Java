@@ -32,6 +32,12 @@ public class Company {
         this.expences = expences;
     }
 
+    public void workingHours() {
+        System.out.println(machines + " and "+workers+" are working on a single project");
+        System.out.println(salary + " and "+expences+" are so high for this project");
+    }
+
+
     public Date time() {
         Calendar gtm = Calendar.getInstance(TimeZone.getTimeZone("GTM"));
         gtm.set(2000, Calendar.JANUARY, 1,1, 11, 33);

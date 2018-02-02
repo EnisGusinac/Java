@@ -5,7 +5,7 @@ import java.util.Date;
  *  third alternative that combines the safety of the telescoping constructor
  *  pattern with the readability of the JavaBeans pattern
  */
-public class CompanyBuilderPattern {
+public class CompanyBuilderPattern extends Company {
 
     private int machines = 100;
     private int workers = 1000;
@@ -27,6 +27,16 @@ public class CompanyBuilderPattern {
         public void setExpences(int expences) {
             this.expences = expences;
         }
+
+    public static void main(String[] args) {
+        Company aba = new Company();
+        aba.setExpences(1000);
+        aba.setMachines(10);
+        aba.setSalary(1000);
+        aba.setWorkers(35);
+        aba.workingHours();
+
+    }
 
     public class Machine {
         private String name;
