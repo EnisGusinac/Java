@@ -11,16 +11,8 @@ public class Animal {
         this.weightInLbs = weightInLbs;
     }
 
-    public void fly() {
-        System.out.println( specie + " is flying");
-    }
-
-    public void bark() {
-        System.out.println( specie + " is barking");
-    }
-
     public void specification() {
-        System.out.println(specie + " is " + age + "y and have " + weightInLbs + " lbs");
+        System.out.println(specie + " is " + age + "y old and have " + weightInLbs + "lbs in weight");
     }
 
 
