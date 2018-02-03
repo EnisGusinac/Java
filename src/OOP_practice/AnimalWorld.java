@@ -18,6 +18,13 @@ public class AnimalWorld {
         fish.specification();
         System.out.println("______________________");
 
+        Chicken chicken = new Chicken("Chicken", 1, 8);
+        chicken.fly();
+        System.out.println("______________________");
 
+        Sparrow sparrow = new Sparrow("Sparrow", 1, 1);
+        sparrow.fly();
+        sparrow.specification();
+        System.out.println("______________________");
     }
 }
