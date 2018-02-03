@@ -1,6 +1,7 @@
 package OOP_practice;
 
-public class Chicken extends Bird {
+public class Chicken extends Bird implements BirdInterface {
+
     // Extending the Bird constructor
     public Chicken(String specie, int age, int weightInLbs) {
         super(specie, age, weightInLbs);
@@ -13,7 +14,7 @@ public class Chicken extends Bird {
      * and we are redefining that method in the Chicken class
      */
     @Override
-    public void fly() {
+    public void flyable() {
         System.out.println(specie + " is not able to fly...");
     }
 

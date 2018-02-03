@@ -9,7 +9,7 @@ public class AnimalWorld {
         System.out.println("______________________");
 
         Bird birdy = new Bird("Birdy", 1, 3);
-        birdy.fly();
+        birdy.flyable();
         birdy.specification();
         System.out.println("______________________");
 
@@ -19,11 +19,11 @@ public class AnimalWorld {
         System.out.println("______________________");
 
         Chicken chicken = new Chicken("Chicken", 1, 8);
-        chicken.fly();
+        chicken.flyable();
         System.out.println("______________________");
 
         Sparrow sparrow = new Sparrow("Sparrow", 1, 1);
-        sparrow.fly();
+        sparrow.flyable();
         sparrow.specification();
         System.out.println("______________________");
     }
