@@ -2,11 +2,16 @@ package OOP_practice;
 
 public class AnimalWorld {
 
+    // static method that calls move method
+    public static void moveAnimal(Animal animal) {
+        animal.move();
+    }
+
     public static void main(String[] args) {
 
         Animal dog = new Animal("Dog", 4, 22) {
             @Override
-            public void move() { System.out.println("This "+ specie + " is living");}
+            public void move() { System.out.println("This "+ specie + " is moving");}
         };
         dog.specification();
         dog.move();
@@ -38,6 +43,9 @@ public class AnimalWorld {
         sparrow1.specification();
         System.out.println("______________________");
 
-
+        moveAnimal(birdy);
+        moveAnimal(sparrow);
+        moveAnimal(fish);
+        moveAnimal(dog);
     }
 }
