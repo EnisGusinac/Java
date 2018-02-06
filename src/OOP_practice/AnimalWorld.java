@@ -4,13 +4,12 @@ public class AnimalWorld {
 
     public static void main(String[] args) {
 
-        Animal ani = new Animal("Dog", 4, 22) {
+        Animal dog = new Animal("Dog", 4, 22) {
             @Override
-            public void move() {
-
-            }
+            public void move() { System.out.println("This "+ specie + " is living");}
         };
-        ani.specification();
+        dog.specification();
+        dog.move();
         System.out.println("______________________");
 
         Bird birdy = new Bird("Bird", 1, 3);
@@ -32,5 +31,13 @@ public class AnimalWorld {
         sparrow.flyable();
         sparrow.specification();
         System.out.println("______________________");
+
+        // from abstract method
+        Animal sparrow1 = new Sparrow("White sparrow", 1, 2);
+        sparrow1.move();
+        sparrow1.specification();
+        System.out.println("______________________");
+
+
     }
 }

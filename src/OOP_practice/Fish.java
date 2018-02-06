@@ -12,11 +12,11 @@ public class Fish extends Animal {
 
     @Override
     public void move() {
-
+        System.out.println( specie + " is moving by swimming");
     }
 
     public void swim() {
-        System.out.println("Fish can swim... ");
+        System.out.println( specie + " can swim... ");
     }
 
 }
