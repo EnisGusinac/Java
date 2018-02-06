@@ -4,11 +4,17 @@ public class AnimalWorld {
 
     public static void main(String[] args) {
 
-        Animal ani = new Animal("Dog", 4, 22);
+        Animal ani = new Animal("Dog", 4, 22) {
+            @Override
+            public void move() {
+
+            }
+        };
         ani.specification();
         System.out.println("______________________");
 
-        Bird birdy = new Bird("Birdy", 1, 3);
+        Bird birdy = new Bird("Bird", 1, 3);
+        birdy.move();
         birdy.flyable();
         birdy.specification();
         System.out.println("______________________");

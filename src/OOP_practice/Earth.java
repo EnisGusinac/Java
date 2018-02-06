@@ -17,12 +17,22 @@ public class Earth {
         System.out.println("----------------------------------------");
 
         // Telescoping constructor design pattern
-        Animal birdy = new Animal("bird", 2, 2);
+        Animal birdy = new Animal("bird", 2, 2) {
+            @Override
+            public void move() {
+
+            }
+        };
         birdy.specification();
         System.out.println("----------------------------------------");
 
         // Telescoping constructor design pattern
-        Animal barky = new Animal("dog", 3, 22);
+        Animal barky = new Animal("dog", 3, 22) {
+            @Override
+            public void move() {
+
+            }
+        };
         barky.specification();
         System.out.println("----------------------------------------");
 

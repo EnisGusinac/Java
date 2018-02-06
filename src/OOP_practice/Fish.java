@@ -10,6 +10,11 @@ public class Fish extends Animal {
         super(specie, age, weightInLbs);
     }
 
+    @Override
+    public void move() {
+
+    }
+
     public void swim() {
         System.out.println("Fish can swim... ");
     }

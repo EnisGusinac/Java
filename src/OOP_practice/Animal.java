@@ -1,6 +1,6 @@
 package OOP_practice;
 
-public class Animal {
+public abstract class Animal {
     String specie;
     int age;
     int weightInLbs;
@@ -14,6 +14,8 @@ public class Animal {
     public void specification() {
         System.out.println(specie + " is " + age + "y old and have " + weightInLbs + "lbs in weight");
     }
+
+    public abstract void move();
 
 
 }

@@ -10,6 +10,11 @@ public class Bird extends Animal implements BirdInterface{
         super(specie, age, weightInLbs);
     }
 
+    @Override
+    public void move() {
+        System.out.println(specie + " is flapping wings...");
+    }
+
     // Defining the flyable method from Interface
     public void flyable() {
         System.out.println(specie + " is flying...");
